@@ -1,0 +1,201 @@
+Slip 1
+
+nice() → Changes process priority.
+
+fork() → Creates a child process.
+
+Demand paging → Loads pages on demand.
+
+FIFO → First In First Out page replacement.
+
+Page fault → Page not in memory.
+
+Banker’s algorithm → Deadlock avoidance.
+
+Slip 2
+
+SJF (Non-preemptive) → Shortest job runs first.
+
+Gantt chart → Shows CPU scheduling timeline.
+
+Turnaround time → Completion – Arrival.
+
+Waiting time → Turnaround – Burst.
+
+Deadlock → Circular resource waiting.
+
+Slip 3
+
+exec() → Executes new program.
+
+FCFS → First Come First Serve scheduling.
+
+A* → AI search using cost + heuristic.
+
+Heuristic (h) → Estimated cost to goal.
+
+Slip 4
+
+Orphan process → Parent exited before child.
+
+Priority scheduling → Process with higher priority first.
+
+Need matrix → Max – Allocation.
+
+Safe state → No deadlock.
+
+Slip 5
+
+nice() → Sets process priority.
+
+Demand paging → Loads pages only when needed.
+
+Banker’s algo → Checks for safe sequence.
+
+Available array → Free resources list.
+
+Slip 6
+
+clock() → Measures execution time.
+
+FIFO → Oldest page replaced first.
+
+A* → Finds optimal path using heuristic.
+
+Slip 7
+
+execl() → Executes “ls” command.
+
+FCFS → Processes in arrival order.
+
+LRU → Least recently used page replaced.
+
+Slip 8
+
+Need matrix → Resources still needed.
+
+AO* → Graph search algorithm.
+
+OPT → Optimal page replacement (lowest future use).
+
+Slip 9
+
+execl() → Executes external command.
+
+Banker’s algo → Checks safe sequence.
+
+Round Robin → Equal time quantum for each process.
+
+Slip 10
+
+Orphan process → Child runs after parent ends.
+
+OPT → Replaces page not used for longest future.
+
+FCFS → Simple non-preemptive scheduling.
+
+Slip 11
+
+fork() → Creates child process.
+
+FIFO → Oldest page removed.
+
+A* → Uses f(n) = g(n)+h(n).
+
+Slip 12
+
+Orphan → Parent terminates first.
+
+OPT → Optimal replacement.
+
+FCFS → Simple scheduling algorithm.
+
+Slip 13
+
+nice() → Adjusts process priority.
+
+Banker’s → Avoids deadlock.
+
+Safe sequence → Order without deadlock.
+
+SJF → Shortest job runs first.
+
+Slip 14
+
+clock() → CPU timing function.
+
+FIFO → Page replacement method.
+
+SJF → Minimal burst time next.
+
+Slip 15
+
+execl() → Executes command.
+
+LRU → Least recently used.
+
+Preemptive SJF → Remaining time smallest next.
+
+Slip 16
+
+clock() → Measures CPU time.
+
+OPT → Replace page not used soonest.
+
+A* → AI shortest path.
+
+Heuristic → Cost estimate.
+
+Slip 17
+
+Deadlock → Processes wait forever.
+
+Resources needed → Total - Allocated.
+
+OPT → Optimal page replacement.
+
+FCFS → Sequential scheduling.
+
+Slip 18
+
+Need matrix → Max - Allocated.
+
+OPT → Replaces farthest future page.
+
+SJF → Shortest CPU burst first.
+
+Slip 19
+
+fork() → Spawns child.
+
+execl() → Runs external file.
+
+Priority scheduling → Based on priority.
+
+Banker’s → Checks for safety.
+
+Slip 20
+
+fork() → Creates process.
+
+execl() → Runs “ls”.
+
+LRU → Least recently used page.
+
+FCFS → Simple CPU scheduling.
+
+✅ Bonus Common Viva Qs
+
+What is process? → Program in execution.
+
+What is thread? → Smallest execution unit.
+
+What is deadlock? → Processes wait indefinitely.
+
+What is starvation? → Process never gets CPU.
+
+Difference between preemptive & non-preemptive? → CPU can/can’t be taken forcibly.
+
+Purpose of scheduling? → Max CPU utilization, fairness.
+
+What is semaphore? → Used for synchronization.

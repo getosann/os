@@ -1,0 +1,142 @@
+💥 1. Demand Paging (FIFO / LRU / OPT)
+
+(Appears in slips: 1, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 20)
+Concept: Memory management technique that loads pages only when needed.
+Algorithm Variants:
+
+FIFO: Replace oldest page.
+
+LRU: Replace least recently used.
+
+OPT: Replace page not used for longest future time.
+Key points to say:
+
+Page reference string = given sequence of pages.
+
+Page fault = when page not in memory.
+
+Frame = memory slot for pages.
+
+Output = scheduling order + total page faults.
+Explain: “I implemented page replacement using X algorithm and calculated total page faults.”
+
+💥 2. CPU Scheduling Algorithms
+
+(Appears in slips: 2, 3, 4, 7, 9, 10, 13, 14, 15, 17, 18, 19, 20)
+Common types:
+
+FCFS (First Come First Serve): Processes in arrival order.
+
+SJF / Shortest Job First: Least burst time first.
+
+Priority Scheduling: Higher priority first.
+
+Round Robin (RR): Equal time quantum.
+
+Preemptive vs Non-Preemptive: Whether CPU can be taken before completion.
+Key terms:
+
+Arrival time, Burst time, Turnaround time, Waiting time, Gantt chart.
+Say in viva:
+“Scheduling decides which process runs next. I used (algorithm) to calculate waiting & turnaround time and displayed Gantt chart.”
+
+💥 3. Banker’s Algorithm (Deadlock Avoidance)
+
+(Appears in slips: 1, 4, 5, 9, 13, 19)
+Concept: Ensures system remains in a safe state before granting resources.
+Steps:
+
+Need = Max - Allocation
+
+Check if request ≤ Need and ≤ Available.
+
+Find Safe Sequence → no deadlock.
+Keywords: Allocation, Max, Need, Available, Safe State.
+Say:
+“I calculated the Need matrix, checked for safety, and printed safe sequence to confirm no deadlock.”
+
+💥 4. A* Algorithm (AI Pathfinding)
+
+(Appears in slips: 3, 6, 11, 16)
+Concept: Used in AI for shortest or least-cost path finding.
+Formula:
+f(n) = g(n) + h(n)
+
+g(n) = cost from start to node.
+
+h(n) = heuristic (estimated cost to goal).
+Say:
+“A* uses cost + heuristic to find the optimal path efficiently compared to other search algorithms.”
+
+💥 5. AO* Algorithm
+
+(Slip 8)
+Concept: Used for AND-OR graphs where solutions combine multiple sub-goals.
+Say:
+“AO* expands nodes based on cost and heuristic values to find a minimal-cost solution in an AND-OR search graph.”
+
+💥 6. Process Management & System Calls
+
+(Appears in slips: 1, 2, 3, 4, 5, 7, 9, 10, 11, 13, 15, 19, 20)
+
+🧩 Core Calls:
+
+fork() → Creates child process.
+
+execl() / exec() → Executes new program.
+
+nice() → Changes process priority.
+
+sleep() → Puts process to sleep.
+
+getpid() / getppid() → Process IDs.
+
+orphan process → Parent ends before child.
+
+zombie process → Child ends, parent doesn’t collect status.
+Say:
+“I demonstrated process creation using fork() and managed execution order with sleep() or exec().”
+
+💥 7. Clock Function
+
+(Slips: 6, 14, 16)
+Concept: Used to measure CPU execution time of code.
+Function: clock_t start = clock(); ... clock_t end = clock();
+Formula: (end - start) / CLOCKS_PER_SEC
+Say:
+“I used clock() to calculate how long a set of instructions took to execute.”
+
+💥 8. Deadlock & Resource Concepts
+
+(Slips: 17, 18, 19)
+Deadlock: Processes wait forever due to resource hold and request.
+Conditions (4):
+
+Mutual exclusion
+
+Hold and wait
+
+No preemption
+
+Circular wait
+Minimum resources to avoid deadlock: Based on allocation and max needs.
+Say:
+“I calculated minimum resources required to keep system in safe state and avoid deadlock.”
+
+💥 9. Page Replacement Output to Explain
+
+If examiner asks:
+“What does your output show?” →
+👉 “It shows page scheduling sequence and total number of page faults using the given algorithm.”
+
+If CPU scheduling output:
+👉 “It displays Gantt chart, waiting time, turnaround time, and average values.”
+
+
+🧩 If Viva asks “Compare”:
+Concept	Meaning
+SJF vs FCFS	SJF = min burst time; FCFS = arrival order
+Preemptive vs Non-preemptive	CPU can/cannot be taken mid-process
+LRU vs FIFO	LRU uses recent use; FIFO uses arrival order
+Safe state vs Deadlock	Safe → no deadlock; Deadlock → no safe sequence
+Orphan vs Zombie	Orphan = parent dies first; Zombie = child finished, not collected
